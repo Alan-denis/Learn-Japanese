@@ -1,5 +1,6 @@
 source "./countersQuiz.tcl"
 source "./tensesQuiz.tcl"
+source "./vocabularyQuiz.tcl"
 source "./utils.tcl"
 
 #####################
@@ -8,6 +9,7 @@ source "./utils.tcl"
 set trainingModes {
     "Counters\t\t[Most important / Basic to know]"
     "Verbe tenses\t\t[All of them]"
+    "Vocabulary\t\t[Most important / Basic to know]"
 }
 
 #####################
@@ -58,6 +60,15 @@ proc main {} {
         1   { 
                 while {1} {
                     set result [runTensesQuiz]
+
+                    if {[checkExit $result]} {
+                        displayMenu
+                    }
+                }
+            }
+        2   { 
+                while {1} {
+                    set result [runVocabularyQuiz]
 
                     if {[checkExit $result]} {
                         displayMenu

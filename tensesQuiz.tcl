@@ -1,256 +1,288 @@
 source "./utils.tcl"
 
+# "寝る neru - sleep" {
+#     "Present Affirmative"   "寝ます"
+#     "Present Negative"      "寝ません"
+#     "Past Affirmative"      "寝ました"
+#     "Past Negative"         "寝ませんでした"
+#     "Meaning"               "wait"
+# }
+
+# "見せる miseru - show" {
+#     "Present Affirmative"   "見せます"
+#     "Present Negative"      "見せません"
+#     "Past Affirmative"      "見せました"
+#     "Past Negative"         "見せませんでした"
+#     "Meaning"               "wait"
+# }
+
+# "頑張る ganbaru - do one's best" {
+#     "Present Affirmative"   "頑張ります"
+#     "Present Negative"      "頑張りません"
+#     "Past Affirmative"      "頑張りました"
+#     "Past Negative"         "頑張りませんでした"
+#     "Meaning"               "wait"
+# }
+
+# "教える oshieru - teach" {
+#     "Present Affirmative"   "教えます"
+#     "Present Negative"      "教えません"
+#     "Past Affirmative"      "教えました"
+#     "Past Negative"         "教えませんでした"
+#     "Meaning"               "wait"
+# }
+
+# "伝える tsutaeru - convey" {
+#     "Present Affirmative"   "伝えます"
+#     "Present Negative"      "伝えません"
+#     "Past Affirmative"      "伝えました"
+#     "Past Negative"         "伝えませんでした"
+#     "Meaning"               "wait"
+# }
+
+# "欲しい hoshii - want" {
+#     "Present Affirmative"   "欲しいです"
+#     "Present Negative"      "欲しくないです"
+#     "Past Affirmative"      "欲しかったです"
+#     "Past Negative"         "欲しくなかったです"
+#     "Meaning"               "wait"
+# }
+
+# "感じる kanjiru - feel" {
+#     "Present Affirmative"   "感じます"
+#     "Present Negative"      "感じません"
+#     "Past Affirmative"      "感じました"
+#     "Past Negative"         "感じませんでした"
+#     "Meaning"               "wait"
+# }
+
+# "始める hajimeru - begin" {
+#     "Present Affirmative"   "始めます"
+#     "Present Negative"      "始めません"
+#     "Past Affirmative"      "始めました"
+#     "Past Negative"         "始めませんでした"
+#     "Meaning"               "wait"
+# }
+
+
+# ---------------
+# "する" {
+#     "Present Affirmative"   "します"
+#     "Present Negative"      "しています"
+#     "Past Affirmative"      "しましょう"
+#     "Past Negative"         "してください"
+#     "Meaning"               "do"
+# }
+
+# "ある" {
+#     "Present Affirmative"   "あります"
+#     "Present Negative"      "ありません"
+#     "Past Affirmative"      "ありました"
+#     "Past Negative"         "ありませんでした"
+#     "Meaning"               "be (nonliving things)"
+# }
+
+# "いる" {
+#     "Present Affirmative"   "います"
+#     "Present Negative"      "いません"
+#     "Past Affirmative"      "いました"
+#     "Past Negative"         "いませんでした"
+#     "Meaning"               "be (living things)"
+# }
+
+# "行く" {
+#     "Present Affirmative"   "行きます"
+#     "Present Negative"      "行きません"
+#     "Past Affirmative"      "行きました"
+#     "Past Negative"         "行きませんでした"
+#     "Meaning"               "いく - go"
+# }
+
+# "見る" {
+#     "Present Affirmative"   "見ます"
+#     "Present Negative"      "見ません"
+#     "Past Affirmative"      "見ました"
+#     "Past Negative"         "見ませんでした"
+#     "Meaning"               "みる - see"
+# }
+
+# "聞く" {
+#     "Present Affirmative"   "聞きます"
+#     "Present Negative"      "聞きません"
+#     "Past Affirmative"      "聞きました"
+#     "Past Negative"         "聞きませんでした"
+#     "Meaning"               "きく - ask/listen"
+# }
+
+# "言う" {
+#     "Present Affirmative"   "言います"
+#     "Present Negative"      "言いません"
+#     "Past Affirmative"      "言いました"
+#     "Past Negative"         "言いませんでした"
+#     "Meaning"               "いう - say"
+# }
+
+# "食べる" {
+#     "Present Affirmative"   "食べます"
+#     "Present Negative"      "食べません"
+#     "Past Affirmative"      "食べました"
+#     "Past Negative"         "食べませんでした"
+#     "Meaning"               "たべる - eat"
+# }
+
+# "飲む" {
+#     "Present Affirmative"   "飲みます"
+#     "Present Negative"      "飲みません"
+#     "Past Affirmative"      "飲みました"
+#     "Past Negative"         "飲みませんでした"
+#     "Meaning"               "のむ - drink"
+# }
+
+# "知る" {
+#     "Present Affirmative"   "知ります"
+#     "Present Negative"      "知りません"
+#     "Past Affirmative"      "知りました"
+#     "Past Negative"         "知りませんでした"
+#     "Meaning"               "しる - know"
+# }
+
+# "なる" {
+#     "Present Affirmative"   "なります"
+#     "Present Negative"      "なりません"
+#     "Past Affirmative"      "なりました"
+#     "Past Negative"         "なりませんでした"
+#     "Meaning"               "become"
+# }
+
+# "使う" {
+#     "Present Affirmative"   "使います"
+#     "Present Negative"      "使いません"
+#     "Past Affirmative"      "使いました"
+#     "Past Negative"         "使いませんでした"
+#     "Meaning"               "つかう - use"
+# }
+
+# "買う" {
+#     "Present Affirmative"   "買います"
+#     "Present Negative"      "買いません"
+#     "Past Affirmative"      "買いました"
+#     "Past Negative"         "買いませんでした"
+#     "Meaning"               "かう - buy"
+# }
+
+# "売る" {
+#     "Present Affirmative"   "売ります"
+#     "Present Negative"      "売りません"
+#     "Past Affirmative"      "売りました"
+#     "Past Negative"         "売りませんでした"
+#     "Meaning"               "うる - sell"
+# }
+
+# "走る" {
+#     "Present Affirmative"   "走ります"
+#     "Present Negative"      "走りません"
+#     "Past Affirmative"      "走りました"
+#     "Past Negative"         "走りませんでした"
+#     "Meaning"               "はしる - run"
+# }
+
+# "歩く" {
+#     "Present Affirmative"   "歩きます"
+#     "Present Negative"      "歩きません"
+#     "Past Affirmative"      "歩きました"
+#     "Past Negative"         "歩きませんでした"
+#     "Meaning"               "あるく - walk"
+# }
+
+# "待つ" {
+#     "Present Affirmative"   "待ちます"
+#     "Present Negative"      "待ちません"
+#     "Past Affirmative"      "待ちました"
+#     "Past Negative"         "待ちませんでした"
+#     "Meaning"               "まつ - wait"
+# }
+
+# "着る" {
+#     "Present Affirmative"   "着ます"
+#     "Present Negative"      "着ません"
+#     "Past Affirmative"      "着ました"
+#     "Past Negative"         "着ませんでした"
+#     "Meaning"               "きる - wear"
+# }
+
 set verbs {
-    "する  - do" {
-        "Present Affirmative"   "します"
-        "Present Negative"      "しています"
-        "Past Affirmative"      "しましょう"
-        "Past Negative"         "してください"
-    }
 
-    "ある aru - be (nonliving things)" {
-        "Present Affirmative"   "あります"
-        "Present Negative"      "ありません"
-        "Past Affirmative"      "ありました"
-        "Past Negative"         "ありませんでした"
-    }
 
-    "いる iru - be (living things)" {
-        "Present Affirmative"   "います"
-        "Present Negative"      "いません"
-        "Past Affirmative"      "いました"
-        "Past Negative"         "いませんでした"
-    }
-
-    "行く iku - go" {
-        "Present Affirmative"   "行きます"
-        "Present Negative"      "行きません"
-        "Past Affirmative"      "行きました"
-        "Past Negative"         "行きませんでした"
-    }
-
-    "見る miru - see" {
-        "Present Affirmative"   "見ます"
-        "Present Negative"      "見ません"
-        "Past Affirmative"      "見ました"
-        "Past Negative"         "見ませんでした"
-    }
-
-    "聞く kiku - ask/listen" {
-        "Present Affirmative"   "聞きます"
-        "Present Negative"      "聞きません"
-        "Past Affirmative"      "聞きました"
-        "Past Negative"         "聞きませんでした"
-    }
-
-    "言う iu - say" {
-        "Present Affirmative"   "言います"
-        "Present Negative"      "言いません"
-        "Past Affirmative"      "言いました"
-        "Past Negative"         "言いませんでした"
-    }
-
-    "食べる taberu - eat" {
-        "Present Affirmative"   "食べます"
-        "Present Negative"      "食べません"
-        "Past Affirmative"      "食べました"
-        "Past Negative"         "食べませんでした"
-    }
-
-    "飲む nomu - drink" {
-        "Present Affirmative"   "飲みます"
-        "Present Negative"      "飲みません"
-        "Past Affirmative"      "飲みました"
-        "Past Negative"         "飲みませんでした"
-    }
-
-    "知る shiru - know" {
-        "Present Affirmative"   "知ります"
-        "Present Negative"      "知りません"
-        "Past Affirmative"      "知りました"
-        "Past Negative"         "知りませんでした"
-    }
-
-    "なる naru - become" {
-        "Present Affirmative"   "なります"
-        "Present Negative"      "なりません"
-        "Past Affirmative"      "なりました"
-        "Past Negative"         "なりませんでした"
-    }
-
-    "使う tsukau - use" {
-        "Present Affirmative"   "使います"
-        "Present Negative"      "使いません"
-        "Past Affirmative"      "使いました"
-        "Past Negative"         "使いませんでした"
-    }
-
-    "買う kau - buy" {
-        "Present Affirmative"   "買います"
-        "Present Negative"      "買いません"
-        "Past Affirmative"      "買いました"
-        "Past Negative"         "買いませんでした"
-    }
-
-    "売る uru - sell" {
-        "Present Affirmative"   "売ります"
-        "Present Negative"      "売りません"
-        "Past Affirmative"      "売りました"
-        "Past Negative"         "売りませんでした"
-    }
-
-    "走る hashiru - run" {
-        "Present Affirmative"   "走ります"
-        "Present Negative"      "走りません"
-        "Past Affirmative"      "走りました"
-        "Past Negative"         "走りませんでした"
-    }
-
-    "歩く aruku - walk" {
-        "Present Affirmative"   "歩きます"
-        "Present Negative"      "歩きません"
-        "Past Affirmative"      "歩きました"
-        "Past Negative"         "歩きませんでした"
-    }
-
-    "待つ matsu - wait" {
-        "Present Affirmative"   "待ちます"
-        "Present Negative"      "待ちません"
-        "Past Affirmative"      "待ちました"
-        "Past Negative"         "待ちませんでした"
-    }
-
-    "着る kiru - wear" {
-        "Present Affirmative"   "着ます"
-        "Present Negative"      "着ません"
-        "Past Affirmative"      "着ました"
-        "Past Negative"         "着ませんでした"
-    }
-
-    "書く kaku - write" {
+    "書く" {
         "Present Affirmative"   "書きます"
         "Present Negative"      "書きません"
         "Past Affirmative"      "書きました"
         "Past Negative"         "書きませんでした"
+        "Meaning"               "かく - write"
     }
 
-    "読む yomu - read" {
+    "読む" {
         "Present Affirmative"   "読みます"
         "Present Negative"      "読みません"
         "Past Affirmative"      "読みました"
         "Past Negative"         "読みませんでした"
+        "Meaning"               "よむ - read"
     }
 
-    "話す hanasu - speak" {
+    "話す" {
         "Present Affirmative"   "話します"
         "Present Negative"      "話しません"
         "Past Affirmative"      "話しました"
         "Past Negative"         "話しませんでした"
+        "Meaning"               "はなす - speak"
     }
 
-    "会う au - meet" {
+    "会う" {
         "Present Affirmative"   "会います"
         "Present Negative"      "会いません"
         "Past Affirmative"      "会いました"
         "Past Negative"         "会いませんでした"
+        "Meaning"               "あう - meet"
     }
 
-    "持つ motsu - have" {
+    "持つ" {
         "Present Affirmative"   "持ちます"
         "Present Negative"      "持ちません"
         "Past Affirmative"      "持ちました"
         "Past Negative"         "持ちませんでした"
+        "Meaning"               "もつ - have"
     }
 
-    "考える kangaeru - think" {
+    "考える" {
         "Present Affirmative"   "考えます"
         "Present Negative"      "考えません"
         "Past Affirmative"      "考えました"
         "Past Negative"         "考えませんでした"
+        "Meaning"               "かんがえる - think"
     }
 
-    "出る deru - go out" {
+    "出る" {
         "Present Affirmative"   "出ます"
         "Present Negative"      "出ません"
         "Past Affirmative"      "出ました"
         "Past Negative"         "出ませんでした"
+        "Meaning"               "でる - go out"
     }
 
-    "入る hairu - enter" {
+    "入る" {
         "Present Affirmative"   "入ります"
         "Present Negative"      "入りません"
         "Past Affirmative"      "入りました"
         "Past Negative"         "入りませんでした"
-    }
-
-    "知っている shitteiru - know" {
-        "Present Affirmative"   "知っています"
-        "Present Negative"      "知っていません"
-        "Past Affirmative"      "知っていました"
-        "Past Negative"         "知っていませんでした"
+        "Meaning"               "はいる - enter"
     }
         
-    "忘れる wasureru - forget" {
+    "忘れる" {
         "Present Affirmative"   "忘れます"
         "Present Negative"      "忘れません"
         "Past Affirmative"      "忘れました"
         "Past Negative"         "忘れませんでした"
-    }
-
-    "寝る neru - sleep" {
-        "Present Affirmative"   "寝ます"
-        "Present Negative"      "寝ません"
-        "Past Affirmative"      "寝ました"
-        "Past Negative"         "寝ませんでした"
-    }
-
-    "見せる miseru - show" {
-        "Present Affirmative"   "見せます"
-        "Present Negative"      "見せません"
-        "Past Affirmative"      "見せました"
-        "Past Negative"         "見せませんでした"
-    }
-
-    "頑張る ganbaru - do one's best" {
-        "Present Affirmative"   "頑張ります"
-        "Present Negative"      "頑張りません"
-        "Past Affirmative"      "頑張りました"
-        "Past Negative"         "頑張りませんでした"
-    }
-
-    "教える oshieru - teach" {
-        "Present Affirmative"   "教えます"
-        "Present Negative"      "教えません"
-        "Past Affirmative"      "教えました"
-        "Past Negative"         "教えませんでした"
-    }
-
-    "伝える tsutaeru - convey" {
-        "Present Affirmative"   "伝えます"
-        "Present Negative"      "伝えません"
-        "Past Affirmative"      "伝えました"
-        "Past Negative"         "伝えませんでした"
-    }
-
-    "欲しい hoshii - want" {
-        "Present Affirmative"   "欲しいです"
-        "Present Negative"      "欲しくないです"
-        "Past Affirmative"      "欲しかったです"
-        "Past Negative"         "欲しくなかったです"
-    }
-
-    "感じる kanjiru - feel" {
-        "Present Affirmative"   "感じます"
-        "Present Negative"      "感じません"
-        "Past Affirmative"      "感じました"
-        "Past Negative"         "感じませんでした"
-    }
-
-    "始める hajimeru - begin" {
-        "Present Affirmative"   "始めます"
-        "Present Negative"      "始めません"
-        "Past Affirmative"      "始めました"
-        "Past Negative"         "始めませんでした"
+        "Meaning"               "わすれる - forget"
     }
 }
 
@@ -274,7 +306,8 @@ set exempleSentences {
     }
 
     "Past Negative" {
-        "彼は宿題を ________。"
+
+"Meaning"               "wait"        "彼は宿題を ________。"
         "彼らはパーティーに ________。"
         "彼女はケーキを ________。"
     }
@@ -303,14 +336,15 @@ proc generateSentence {} {
     set selectedVerb    [getRandomElement [dict keys $verbs]]
 
     set correctAnswer   [dict get [dict get $verbs $selectedVerb] $tense]
+    set meaning         [dict get [dict get $verbs $selectedVerb] "Meaning"]
 
-    return [list $sampleSentence $selectedVerb $tense $correctAnswer]
+    return [list $sampleSentence $selectedVerb $tense $correctAnswer $meaning]
 }
 
 # Main function
 proc runTensesQuiz {} {
 
-    lassign [generateSentence] sentence verb tense correctAnswer
+    lassign [generateSentence] sentence verb tense correctAnswer meaning
 
     puts "--------------------------------------------------------"
     puts "Use the correct verb tense to complete this sentence : $verb , $tense"
@@ -320,5 +354,5 @@ proc runTensesQuiz {} {
     flush stdout
     set userAnswer [gets stdin]
 
-    puts "The full answer is $correctAnswer"
+    puts "The full answer is $correctAnswer - $meaning"
 }
