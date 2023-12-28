@@ -1,4 +1,9 @@
 source "./countersQuiz.tcl"
+source "./adjectivesQuiz.tcl"
+source "./adverbsQuiz.tcl"
+source "./verbsQuiz.tcl"
+source "./prepositionsQuiz.tcl"
+source "./particulesQuiz.tcl"
 source "./tensesQuiz.tcl"
 source "./vocabularyQuiz.tcl"
 source "./utils.tcl"
@@ -8,8 +13,12 @@ source "./utils.tcl"
 #####################
 set trainingModes {
     "Counters\t\t[Most important / Basic to know]"
+    "Verbs\t\t[JLPT N5]"
     "Verbe tenses\t\t[All of them]"
-    "Vocabulary\t\t[Most important / Basic to know]"
+    "Vocabulary\t\t[JLPT N5]"
+    "Prepositions\t\t[JLPT N5]"
+    "Adverbs\t\t[JLPT N5]"
+    "Adjectives\t\t[JLPT N5]"
 }
 
 #####################
@@ -24,7 +33,7 @@ proc displayMenu {} {
 
     puts "
     ###################################################
-                Japanese training executable
+              日本語トレーニング実行可能ファイル
     ###################################################
     "
 
@@ -59,7 +68,7 @@ proc main {} {
             }
         1   { 
                 while {1} {
-                    set result [runTensesQuiz]
+                    set result [runVerbQuiz]
 
                     if {[checkExit $result]} {
                         displayMenu
@@ -68,7 +77,52 @@ proc main {} {
             }
         2   { 
                 while {1} {
+                    set result [runTensesQuiz]
+
+                    if {[checkExit $result]} {
+                        displayMenu
+                    }
+                }
+            }
+        3   { 
+                while {1} {
                     set result [runVocabularyQuiz]
+
+                    if {[checkExit $result]} {
+                        displayMenu
+                    }
+                } 
+            }
+        4   { 
+                while {1} {
+                    set result [runParticuleQuiz]
+
+                    if {[checkExit $result]} {
+                        displayMenu
+                    }
+                } 
+            }
+        5   { 
+                while {1} {
+                    set result [runPrepositionQuiz]
+
+                    if {[checkExit $result]} {
+                        displayMenu
+                    }
+                } 
+            }
+        6   { 
+                while {1} {
+                    set result [runAdjectiveQuiz]
+
+                    if {[checkExit $result]} {
+                        displayMenu
+                    }
+                } 
+            }
+        7   { 
+                while {1} {
+                    set result [runAdverbQuiz]
 
                     if {[checkExit $result]} {
                         displayMenu
