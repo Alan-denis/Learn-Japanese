@@ -2,14 +2,18 @@
 #       UTILS       #
 #####################
 
-proc getRandomElement list {
-    return [lindex $list [expr {int(rand() * [llength $list])}]]
-}
+namespace eval utils {
 
-proc checkExit answer {
-    if {$answer eq "exit"} {
-        return 1
+    proc getRandomElement list {
+        return [lindex $list [expr {int(rand() * [llength $list])}]]
     }
 
-    return 0
+    proc checkExit answer {
+        if {$answer eq "exit"} {
+            return 1
+        }
+
+        return 0
+    }
 }
+

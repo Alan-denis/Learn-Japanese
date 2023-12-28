@@ -1,11 +1,13 @@
-source "./countersQuiz.tcl"
-source "./adjectivesQuiz.tcl"
-source "./adverbsQuiz.tcl"
-source "./verbsQuiz.tcl"
-source "./prepositionsQuiz.tcl"
-source "./particulesQuiz.tcl"
-source "./tensesQuiz.tcl"
-source "./vocabularyQuiz.tcl"
+proc sourceDirectory {directory} {
+    set files [glob -directory $directory *]
+
+    foreach file $files {
+        source $file
+    }
+}
+
+sourceDirectory "./Quizzes"
+sourceDirectory "./Data"
 source "./utils.tcl"
 
 #####################
@@ -17,6 +19,7 @@ set trainingModes {
     "Verbe tenses\t\t[All of them]"
     "Vocabulary\t\t[JLPT N5]"
     "Prepositions\t\t[JLPT N5]"
+    "Particules\t\t[JLPT N5]"
     "Adverbs\t\t[JLPT N5]"
     "Adjectives\t\t[JLPT N5]"
 }
@@ -57,74 +60,74 @@ proc main {} {
     global userChoice
 
     switch -- $userChoice {
-        0   { 
+        0   {
                 while {1} {
-                    set result [runCounterQuiz]
+                    set result [quiz::runCounterQuiz]
 
-                    if {[checkExit $result]} {
+                    if {[utils::checkExit $result]} {
                         displayMenu
                     }
                 } 
             }
         1   { 
                 while {1} {
-                    set result [runVerbQuiz]
+                    set result [quiz::runVerbQuiz]
 
-                    if {[checkExit $result]} {
+                    if {[utils::checkExit $result]} {
                         displayMenu
                     }
                 }
             }
         2   { 
                 while {1} {
-                    set result [runTensesQuiz]
+                    set result [quiz::runTensesQuiz]
 
-                    if {[checkExit $result]} {
+                    if {[utils::checkExit $result]} {
                         displayMenu
                     }
                 }
             }
         3   { 
                 while {1} {
-                    set result [runVocabularyQuiz]
+                    set result [quiz::runVocabularyQuiz]
 
-                    if {[checkExit $result]} {
+                    if {[utils::checkExit $result]} {
                         displayMenu
                     }
                 } 
             }
         4   { 
                 while {1} {
-                    set result [runParticuleQuiz]
+                    set result [quiz::runPrepositionQuiz]
 
-                    if {[checkExit $result]} {
+                    if {[utils::checkExit $result]} {
                         displayMenu
                     }
                 } 
             }
         5   { 
                 while {1} {
-                    set result [runPrepositionQuiz]
+                    set result [quiz::runParticuleQuiz]
 
-                    if {[checkExit $result]} {
+                    if {[utils::checkExit $result]} {
                         displayMenu
                     }
                 } 
             }
         6   { 
                 while {1} {
-                    set result [runAdjectiveQuiz]
+                    set result [quiz::runAdverbQuiz]
 
-                    if {[checkExit $result]} {
+                    if {[utils::checkExit $result]} {
                         displayMenu
                     }
                 } 
             }
         7   { 
                 while {1} {
-                    set result [runAdverbQuiz]
+                    set result [quiz::runAdjectiveQuiz]
 
-                    if {[checkExit $result]} {
+                    if {[utils::checkExit $result]} {
                         displayMenu
                     }
                 } 
