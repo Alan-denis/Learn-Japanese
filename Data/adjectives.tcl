@@ -1,5 +1,5 @@
-
 namespace eval data {
+    
     variable adjectives {
         "危ない" "あぶない - dangerous"
         "赤い" "あかい - red, crimson, scarlet​"
