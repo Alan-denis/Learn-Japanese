@@ -1,4 +1,5 @@
 namespace eval data {
+    
     variable counters {
         つ "つ (general)"
         本 "ほん (long, thin objects)"

@@ -1,4 +1,5 @@
 namespace eval data {
+    
     variable adverbs {
         "ちょっと" "ちょっと - a little"
         "丁度" " ちょうど - exactly"

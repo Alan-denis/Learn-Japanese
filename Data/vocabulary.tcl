@@ -1,5 +1,5 @@
-
 namespace eval data {
+    
     variable words {
         "赤" "あか - red, crimson, scarlet"
         "秋" "あき - autumn, fall"

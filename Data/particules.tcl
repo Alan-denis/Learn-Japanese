@@ -1,5 +1,5 @@
-
 namespace eval data {
+    
     variable particules {
         "だけ" "only, just, as much as ~"
         "が" "subject marker, however, but ~"

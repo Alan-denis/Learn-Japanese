@@ -1,5 +1,5 @@
-
 namespace eval data {
+    
     variable verbsTenses {
         "する" {
             "Present Affirmative"   "します"

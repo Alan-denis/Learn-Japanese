@@ -1,5 +1,5 @@
-
 namespace eval data {
+    
     variable prepositions {
         "この, その, あの" "that"
         "小さな" "ちいさな - small, little, tiny"
