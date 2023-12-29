@@ -132,6 +132,10 @@ proc main {} {
                     }
                 } 
             }
+        default {
+            displayMenu
+            main
+        }
     }
 }
 

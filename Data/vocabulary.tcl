@@ -1,6 +1,6 @@
 namespace eval data {
     
-    variable words {
+    variable vocabularyWords {
         "赤" "あか - red, crimson, scarlet"
         "秋" "あき - autumn, fall"
         "飴" "あめ - candy"

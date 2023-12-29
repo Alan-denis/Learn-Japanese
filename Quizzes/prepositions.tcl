@@ -9,8 +9,10 @@ namespace eval quiz {
         puts "Assess correctly the preposition's meaning : $preposition"
 
         flush stdout
-        set userAnswer [gets stdin]
+        set userGuess [gets stdin]
 
         puts "The full answer is $correctAnswer"
+
+        return $userGuess
     }
 }

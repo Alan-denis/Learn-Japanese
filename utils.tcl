@@ -1,7 +1,3 @@
-#####################
-#       UTILS       #
-#####################
-
 namespace eval utils {
 
     proc getRandomElement list {

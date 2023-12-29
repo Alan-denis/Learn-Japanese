@@ -25,8 +25,10 @@ namespace eval quiz {
         puts "Enter the correct verb form: "
 
         flush stdout
-        set userAnswer [gets stdin]
+        set userGuess [gets stdin]
 
         puts "The full answer is $correctAnswer - $meaning"
+
+        return $userGuess
     }
 }
