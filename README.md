@@ -16,9 +16,12 @@ Install a TCL interpretor [Magicsplat](https://sourceforge.net/projects/magicspl
 
 # How to start
 
-Just run the entry.tcl script and there you go.
+- Run the entry.tcl script and there you go.
 
-    > tclsh entry.tcl
+        > tclsh entry.tcl
+
+- Chose a training mode
+![](Images/menu.png)
 
 # Utils
 
