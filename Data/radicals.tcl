@@ -1,7 +1,7 @@
 namespace eval data {
 
     variable radicals {
-       "口" "Mouth"
+        "口" "Mouth"
         "囗" "Box"
         "氵" "Water"
         "木" "Tree"

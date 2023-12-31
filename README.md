@@ -21,6 +21,7 @@ Install a TCL interpretor [Magicsplat](https://sourceforge.net/projects/magicspl
         > tclsh entry.tcl
 
 - Chose a training mode
+
 ![](Images/menu.png)
 
 # Utils
