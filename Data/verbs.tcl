@@ -8,7 +8,7 @@ namespace eval data {
         "居る" "いる - to be, to have"
         "始まる" "はじまる - to begin"
         "飲む" "のむ - to drink"
-        "帰る" "かえる - to go back"  
+        "帰る" "かえる - to go back"
         "コピー" "こぴー - copy, photocopy"
         "晴れる" "はれる - to be sunny"
     }

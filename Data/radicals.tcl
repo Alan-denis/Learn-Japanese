@@ -53,5 +53,7 @@ namespace eval data {
         "巾" "Cloth"
         "尸" "Corpse"
         "寸" "Inch"
+        "舌" "Tongue, reed, clapper"
+        "電" "Electricity"
     }
 }
