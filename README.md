@@ -2,7 +2,7 @@
 
 ## Description
 
-This reposotory anables you train your knowledge on the Japanese language.
+This repository helps you to train and aquire japanese language knowledge.
 
 ## UML
 
