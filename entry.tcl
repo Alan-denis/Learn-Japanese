@@ -22,6 +22,7 @@ set trainingModes {
     "Particules\t\t[JLPT N5]"
     "Adverbs\t\t[JLPT N5]"
     "Adjectives\t\t[JLPT N5]"
+    "Radicals\t\t[The most communs]"
 }
 
 #####################
@@ -126,6 +127,15 @@ proc main {} {
         7   { 
                 while {1} {
                     set result [quiz::runAdjectiveQuiz]
+
+                    if {[utils::checkExit $result]} {
+                        displayMenu
+                    }
+                } 
+            }
+        8   { 
+                while {1} {
+                    set result [quiz::runRadicalQuiz]
 
                     if {[utils::checkExit $result]} {
                         displayMenu
