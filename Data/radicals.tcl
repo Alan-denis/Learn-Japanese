@@ -4,7 +4,9 @@ namespace eval data {
         "口" "Mouth"
         "囗" "Box"
         "氵" "Water"
+        "冫" "Cold"
         "木" "Tree"
+        "米" "Rice"
         "亻" "Person"
         "手 or 扌" "Hand"
         "忄 Or ⺗ OR 心" "Heart"
@@ -55,5 +57,8 @@ namespace eval data {
         "寸" "Inch"
         "舌" "Tongue, reed, clapper"
         "電" "Electricity"
+        "七" "Cut, sever"
+        "|"  "Pull"
+        "罒" "Net, fence"
     }
 }
